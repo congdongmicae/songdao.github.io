@@ -492,6 +492,7 @@ a:active {
   border-radius: 0px;
   font-size: 23px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .mail {
@@ -501,6 +502,7 @@ a:active {
   border-radius: 0px;
   font-size: 23px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .facebook {
@@ -556,6 +558,16 @@ a:active {
 }
 
 .mail-container a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.call-container {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.call-container a{
   text-decoration: none;
   cursor: pointer;
 }
