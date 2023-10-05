@@ -520,6 +520,7 @@ a:active {
   border-radius: 0px;
   font-size: 23px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .space {
@@ -545,6 +546,16 @@ a:active {
 }
 
 .fb-container a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mail-container {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.mail-container a{
   text-decoration: none;
   cursor: pointer;
 }
