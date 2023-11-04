@@ -228,118 +228,228 @@ a:active {
     background-color: rgb(72, 111, 125);
 }
 
+.container-header {
+    margin-top: 160px;
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 60px;
+    color: rgb(53, 53, 54);
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+}
 
-
-/*HINH*/
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(218, 227, 243);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Be Vietnam Pro SemiBold;
   }
-  .envelope-container {
+  ::selection{
+    color: #fff;
+    background: #007bff;
+  }
+  body{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden; /*horizontal*/
+    overflow-y: scroll; /*vertikal*/
+  }
+  
+  .wrapper{
+    max-width: 1100px;
+  }
+  .gallery{
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .image{
+    padding: 2px;
+  }
+  .gallery .image span{
+    display: flex;
+    width: 100%;
+  }
+  
+  /*Image display*/
+  .gallery .image img{
+      height: 200px;
+      width: 300px;
+      margin: 5px;
+      border-radius: 5px; 
+      overflow: hidden;
+      object-fit: cover;
+      transition: 1s;
+  }
+  .gallery .image:hover img{
+      filter: brightness(50%); 
+      /*no overlap when hover*/
+      z-index: 2;
     position: relative;
   }
-
-  input#flap {
+  .preview-box{ /*Bild öffnen*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    max-width: 680px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 12px;
+    padding: 0 0px 0px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.735);
+  }
+  .preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+  }
+  .preview-box .details{
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 10px;
+    justify-content: space-between;
+  }
+  .preview-box .details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .caption {
+      text-align: center;
+      font-size: 18px;
+      color:rgb(98, 213, 255);
+  }
+  
+  .caption2 {
+      text-align: center;
+      font-size: 18px;
+      color:rgb(98, 213, 255);
+  }
+  
+  .details .title p{
+    margin: 0 5px;
+  }
+  
+  .title {
+      margin-left: 10px;
+  }
+  
+  .details .title p.current-img{
+    font-weight: 500;
     display: none;
   }
-  .envelope-back {
-    position: relative;
-    width: 320px;
-    height: 200px;
-    background-color: rgb(143, 170, 220);
+  
+  .total-img {
+      display: none; /*not showing */
   }
   
-  .envelope-back:before {
-    content:"";
-    position: absolute;
-    background-color: rgba(0,0,0,0.07);
-    width: 320px;
-    height:10px;
-    border-radius:50%;
-    top:220px;
+  .details .icon{
+    color:rgb(98, 213, 255);
+    font-size: 25px;
+    cursor: pointer;
   }
-  
-  .card {
-    position: absolute;
-    width:300px;
-    height: 180px;
-    background-color: rgb(248, 252, 255);
-    top:10px;
-    left:10px;
+  .preview-box .image-box{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:20px;
-    font-family: Be Vietnam Pro;
-    transition: .1s;
-    z-index:1;
+    width: 100%;
+    position: relative;
+  }
+  .image-box .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
     cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  .slide.prev{
+    left: 0px;
+  }
+  .slide.next{
+    right: 0px;
+  }
+  .image-box img{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+  }
+  .shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0, 0, 0, 0.643);
+    backdrop-filter: blur(10px);
   }
   
-  .card-front {
-    position: absolute;
-    width:0;
-    height:0;
-    border-bottom: 100px solid rgb(47, 85, 151);
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    top:100px;
-    left:0;
-    z-index:3;
+  .date {
+      margin-top: 50px;
+      font-size: 30px;
+      color: rgb(83, 199, 222);
+      text-align: left;
+      margin-left: 85px;
   }
   
-  .card-front:before, .card-front:after {
-    content:"";
-    position: absolute;
-    border-bottom: 100px solid transparent;
-    border-top: 100px solid transparent;
-    height:0;
-    width:0;
-  }
-  
-  .card-front:before {
-    border-left: 161px solid transparent;
-    border-right: 161px solid rgb(143, 170, 220);
-    top:-100px;
-    left:-162px;
-  }
-  
-  .card-front:after {
-    border-right: 161px solid transparent;
-    border-left: 161px solid rgb(143, 170, 220);
-    top:-100px;
-    left:-160px;
-  }
-  
-  .flap {
-    position: absolute;
-    width:0;
-    height:0;
-    border-top: 110px solid rgb(180, 199, 231);
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    top:0;
-    left:0;
-    cursor: pointer;
-    transition: .3s;
-    transform-origin: top;
-    z-index:4;
+  .container-header {
+      margin-top: 110px;
+      font-family: Be Vietnam Pro ExtraBold;
+      font-size: 60px;
+      color: rgb(53, 53, 54);
+      text-align: center;
+      display: block;
+      margin-bottom: 40px;
   }
 
-  #flap:checked + .flap {
-    transform: rotateX(180deg);
-  }
-  
-  #flap:checked ~ .card-front {
-    z-index:7;
-  }
-  
-  #flap:checked ~ .card {
-    z-index:4;
-    transform: translateY(-60px);
-  }
-  
+/*
+
+.date {
+  font-family: Be Vietnam Pro ExtraBold;
+  font-size: 40px;
+  color: rgb(185, 243, 255);
+  margin-left: 220px;
+  text-align: left;
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.gallery a {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px; 
+  overflow: hidden;
+}
+
+.gallery a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.gallery a img:hover {
+  filter: brightness(50%); 
+}
+*/
+

@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
 }
@@ -96,6 +92,18 @@ a:active {
     margin-bottom: 17px;
     margin-left: 45px;
 
+}
+
+.navi-title {
+    display: inline-block;
+    height: 50px;
+    margin-top: 26px;
+}
+
+.nav-right {
+    display: inline-block;
+    height: 50px;
+    margin-top: 26px;
 }
 
 .navibar a {
@@ -210,174 +218,54 @@ a:active {
 }
 
 
+/*LANGUAGE DROPDOWN*/
 
-.fade-in {
+.lang-switch {
+    color: rgb(97, 149, 168);
     font-family: Be Vietnam Pro ExtraBold;
-    font-size: 50px;
-    animation: fadeIn 4s;
-    text-align: center;
-    margin-top: 25px;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.intro {
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-#intro {
-    width: 100%;
-    height: 497px;
-    background-color: rgb(83, 36, 118);
-    padding-top: 130px;
-}
-
-.bible-verse {
-    font-family: Be Vietnam Pro;
-    font-size: 20px;
-    /*letter-spacing: 7px;*/
-    white-space: nowrap;
-    overflow: hidden;
-    animation: fadeIn 4s;
-}
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-.cross {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 72px;
-    height: 136px;
-    animation: fadeIn 4s;
-}
-
-#section2 {
-    height: 7200px;
-    background-color: rgb(255, 255, 255);
-}
-
-.container-gallery-row-top {}
-
-.cp-con {
-    width: 301px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img {
-    width: 300px;
-    background-color: rgb(0, 0, 0);
-    display: inline-block;
-}
-
-.header-img {
-    margin-top: 6px;
-    font-family: Be Vietnam Pro;
     font-size: 15px;
-    color: rgb(0, 0, 0);
-}
-
-.space {
     border: none;
     background-color: rgba(255, 255, 255, 0);
-    padding: 10px 50px;
-    font-size: 23px;
-}
-
-.cp-con1 {
-    width: 300px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
+    transition: 0.15s;
+  }
+  
+  .lang-switch:hover {
+    opacity: 0.5;
+  }
+  
+  .left-side-drop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .lang-content {
+    display: none;
+    position: absolute;
+    font-family: Be Vietnam Pro;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(116, 179, 202, 0.794);
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img1 {
-    width: 301px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
-
-.cp-con2 {
-    width: 300px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img2 {
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
-
-.cp-con3 {
-    width: 300px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img3 {
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
-
-.container-gallery-row-two {
-    margin-top: 60px;
-}
-
-.cp-con4 {
-    width: 300px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img4 {
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
-
-.cp-con5 {
-    width: 300px;
-    height: 471px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.cp-img5 {
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
-
+    z-index: 1;
+  }
+  
+  .lang-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.15s;
+  }
+  
+  .lang-content a:hover {
+    background-color: rgb(72, 111, 125);
+  }
+  
+  .left-side-drop:hover .lang-content {
+    display: block;
+  }
+  
+  .lang-content:hover .lang-switch {
+    background-color: rgb(72, 111, 125);
+  }
