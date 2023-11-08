@@ -159,13 +159,13 @@ a:active {
 
 .navbar {
     background-color: rgb(255, 255, 255);
-    position: fixed;
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
     margin-top: 0;
     display: flexbox;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: static; /*muss vielleich verändert werden*/
 }
 
 .left-side-drop {
@@ -248,7 +248,6 @@ a:active {
     background: #007bff;
   }
   body{
-    padding: 10px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -281,12 +280,12 @@ a:active {
       overflow: hidden;
       object-fit: cover;
       transition: 1s;
+      
   }
   .gallery .image:hover img{
       filter: brightness(50%); 
       /*no overlap when hover*/
       z-index: 2;
-    position: relative;
   }
   .preview-box{ /*Bild öffnen*/
     position: fixed;
@@ -294,7 +293,7 @@ a:active {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
     background: #fff;
-    max-width: 680px;
+    max-width: 650px;
     width: 100%;
     z-index: 5;
     opacity: 0;
@@ -411,6 +410,28 @@ a:active {
       text-align: center;
       display: block;
       margin-bottom: 40px;
+  }
+
+  /*GO UP*/
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 200, 255); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 20px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 500ms;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(0, 200, 255, 0.375);/* Add a dark-grey background on hover */
   }
 
 /*

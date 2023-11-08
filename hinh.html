@@ -111,6 +111,24 @@
                     Tháng 11 2023
                 </div>
                 <div class="gallery">
+                    <div class="image"><img src="img/nov23/50.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/49.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/48.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/47.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/46.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/45.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/44.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/43.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/42.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/41.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/40.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/39.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/38.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/37.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/36.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/35.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/34.jpg" alt=""></div>
+                    <div class="image"><img src="img/nov23/33.jpg" alt=""></div>
                     <div class="image"><img src="img/nov23/32.jpg" alt=""></div>
                     <div class="image"><img src="img/nov23/31.jpg" alt=""></div>
                     <div class="image"><img src="img/nov23/29.jpg" alt=""></div>
@@ -247,31 +265,31 @@
 
     <script src="script-hinh.js"></script>
 
-    <!--
-
-    
-    <div class="gallery">
-        <a href="img/h.jpg">
-            <img src="img/h.jpg">
-        </a>
-        <a href="img/h1.jpg">
-            <img src="img/h1.jpg">
-        </a>
-        <a href="img/h2.jpg">
-            <img src="img/h2.jpg">
-        </a>
-        <a href="img/h3.jpg">
-            <img src="img/h3.jpg">
-        </a>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Đi Lên">
+        <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+    </button>
 
     <script>
-        lightGallery(document.querySelector('.gallery'));
-    </script>
-
-    -->
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 
 </body>
 

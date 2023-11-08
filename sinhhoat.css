@@ -159,13 +159,13 @@ a:active {
 
 .navbar {
     background-color: rgb(255, 255, 255);
-    position: fixed;
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
     margin-top: 0;
     display: flexbox;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: static; /*muss vielleich verändert werden*/
 }
 
 .left-side-drop {
@@ -228,118 +228,613 @@ a:active {
     background-color: rgb(72, 111, 125);
 }
 
+.container-header {
+    margin-top: 160px;
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 60px;
+    color: rgb(53, 53, 54);
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.top-page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.intro-banner {
+    width: 100%;
+    height: 450px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.intro-banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(40%);
+
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 75px;
+    width: 100%;
+}
+
+.subtext {
+    position: absolute;
+    text-align: center;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: Be Vietnam Pro Medium;
+    font-size: 25px;
+    width: 100%;
+}
+
+.img-left img {
+    width: 370px;
+    height: 300px;
+    position: absolute;
+    bottom: -220px;
+    left: 290px;
+    object-fit: cover;
+    filter: brightness(100%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.611);
+}
+
+.img-right img {
+    width: 370px;
+    height: 300px;
+    position: absolute;
+    bottom: -220px;
+    right: 290px;
+    object-fit: cover;
+    filter: brightness(100%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.611);
+}
+
+.about {
+    display: inline-block;
+}
+
+.img-about {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-top: 70px;
+    margin-right: 30px;
+}
+
+.about-text {
+    font-family: Be Vietnam Pro Medium;
+    font-size: 20px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    width: 400px;
+}
+
+.header-abt {
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 32px;
+    color: rgb(53, 53, 54);
+    margin-top: 300px;
+}
+
+.about-note {
+    margin-top: 30px;
+    font-family: Be Vietnam Pro Medium;
+    font-size: 20px;
+    color: rgb(53, 53, 54);
+    background-color: rgb(148, 232, 255);
+    padding: 10px 10px;
+    width: 1240px;
+    border-radius: 25px;
+}
+
+.image-abt {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
 
-/*HINH*/
+.image-abt1 {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
-body {
+
+.image-abt2 {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.image-abt3 {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+.image-abt4 {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.image-abt5 {
+    width: 400px;
+    height: 322px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.excursion {
+    display: inline-block;
+}
+
+.img-excursion {
+    width: 400px;
+    height: 346px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.excursion-text {
+    font-family: Be Vietnam Pro Medium;
+    font-size: 20px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    width: 400px;
+    margin-right: 30px;
+}
+
+.header-exc {
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 32px;
+    color: rgb(53, 53, 54);
+    margin-top: 35px;
+}
+
+
+.header-age {
+    font-family: Be Vietnam Pro ExtraBold;
+    font-size: 32px;
+    color: rgb(53, 53, 54);
+    margin-top: 40px;
+}
+
+/*INVITATION*/
+
+.invitation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(218, 227, 243);
-  }
-  .envelope-container {
-    position: relative;
-  }
+    background-color: #5e7e71;
+    overflow: hidden;
+}
 
-  input#flap {
-    display: none;
-  }
-  .envelope-back {
+.advent {
     position: relative;
-    width: 320px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.envelope {
+    position: relative;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, .3));
+    cursor: default;
+}
+
+.envelope:before {
+    content: "";
+    position: absolute;
+    width: 254px;
+    height: 254px;
+    background-color: rgb(228, 208, 188);
+    transform: rotate(-45deg);
+    border-radius: 0 15px 0 0;
+    left: -37px;
+    top: -82px;
+    cursor: default;
+}
+
+.envelope:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(228, 208, 188);
+    width: 360px;
+    height: 225px;
+    left: -90px;
+    top: 45px;
+    cursor: default;
+}
+
+.ornament {
+    position: absolute;
+    background-color: #ba3c3c;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    top: -30px;
+    left: -60px;
+    filter: drop-shadow(0 -10px 25px rgba(0, 0, 0, .3));
+    transition: .5s;
+    border-radius: 100000px;
+    cursor: default;
+}
+
+
+.ornament:before {
+    content: "";
+    background-color: #c4b281;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    cursor: default;
+}
+
+.ornament:after {
+    content: "";
+    background-color: #c4b281;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 500px;
+    cursor: default;
+}
+
+.ornament:before {
+    top: -30px;
+    left: 100px;
+}
+
+.ornament:after {
+    left: 114px;
+    top: -100;
+}
+
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 190px solid rgb(228, 195, 163);
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: 44px;
+    left: 80px;
+    z-index: 4;
+    cursor: default;
+}
+
+.front:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 190px solid rgb(228, 195, 163);
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: -113px;
+    left: -170px;
+    cursor: default;
+}
+
+.front:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    border-bottom: 150px solid rgb(228, 208, 188);
+    border-right: 180px solid transparent;
+    border-left: 180px solid transparent;
+    top: -36px;
+    left: -170px;
+    cursor: default;
+}
+
+.message {
+    position: absolute;
+    font-family: Be Vietnam Pro Medium;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    top: 80px;
+    left: -4px;
+    transition: .5s;
+    font-size: 30px;
+    width: 200px;
+    cursor: default;
+}
+
+.info {
+    position: absolute;
+    top: 275px;
+    color: white;
+    font-family: Pacifico;
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    left: -35px;
+    cursor: default;
+}
+
+
+.h-invitation {
+    position: absolute;
+    top: -320px;
+    color: white;
+    font-family: Pacifico;
+    text-align: center;
+    width: 351px;
+    font-size: 70px;
+    left: -85px;
+    cursor: default;
+}
+
+.showBtn {
+    
+}
+
+.infobtn {
+    border: none;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 70px;
+    font-family: Pacifico;
+    font-size: 17px;
+    background-color: #c4b281;
+    color: white;
+    position: relative;
+    top: 180px;
+    left: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.advent:hover .ornament {
+    transform: translateY(-120px);
+}
+
+.advent:hover .message {
+    transform: translateY(-120px);
+}
+
+.advent:hover .infobtn {
+    transform: translateY(-120px);
+    z-index: 5;
+    
+}
+
+/*NEW YEAR INVITATION*/
+.invitation1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d0cca9;
+    overflow: hidden;
+}
+
+.tet {
+    position: relative;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.envelope1 {
+    position: relative;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, .3));
+    cursor: default;
+}
+
+.envelope1:before {
+    content: "";
+    position: absolute;
+    width: 254px;
+    height: 254px;
+    background-color: rgb(236, 228, 219);
+    transform: rotate(-45deg);
+    border-radius: 0 15px 0 0;
+    left: -37px;
+    top: -82px;
+    cursor: default;
+}
+
+.envelope1:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(218, 211, 202);
+    width: 360px;
+    height: 225px;
+    left: -90px;
+    top: 45px;
+    cursor: default;
+}
+
+
+.square {
+    position: absolute;
+    background-color: #ddb750;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    top: -30px;
+    left: -35px;
+    filter: drop-shadow(0 -10px 25px rgba(0, 0, 0, .3));
+    transition: .5s;
+    cursor: default;
+    transform: rotate(-45deg);
+}
+
+
+
+.square:after {
+    content: "";
     height: 200px;
-    background-color: rgb(143, 170, 220);
-  }
-  
-  .envelope-back:before {
-    content:"";
+    width: 200px;
     position: absolute;
-    background-color: rgba(0,0,0,0.07);
-    width: 320px;
-    height:10px;
-    border-radius:50%;
-    top:220px;
-  }
-  
-  .card {
-    position: absolute;
-    width:300px;
-    height: 180px;
-    background-color: rgb(248, 252, 255);
-    top:10px;
-    left:10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:20px;
-    font-family: Be Vietnam Pro;
-    transition: .1s;
-    z-index:1;
-    cursor: pointer;
-  }
-  
-  .card-front {
-    position: absolute;
-    width:0;
-    height:0;
-    border-bottom: 100px solid rgb(47, 85, 151);
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    top:100px;
-    left:0;
-    z-index:3;
-  }
-  
-  .card-front:before, .card-front:after {
-    content:"";
-    position: absolute;
-    border-bottom: 100px solid transparent;
-    border-top: 100px solid transparent;
-    height:0;
-    width:0;
-  }
-  
-  .card-front:before {
-    border-left: 161px solid transparent;
-    border-right: 161px solid rgb(143, 170, 220);
-    top:-100px;
-    left:-162px;
-  }
-  
-  .card-front:after {
-    border-right: 161px solid transparent;
-    border-left: 161px solid rgb(143, 170, 220);
-    top:-100px;
-    left:-160px;
-  }
-  
-  .flap {
-    position: absolute;
-    width:0;
-    height:0;
-    border-top: 110px solid rgb(180, 199, 231);
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    top:0;
-    left:0;
-    cursor: pointer;
-    transition: .3s;
-    transform-origin: top;
-    z-index:4;
-  }
+    cursor: default;
+    background-color: #bc3535;
+}
 
-  #flap:checked + .flap {
-    transform: rotateX(180deg);
+.square:after {
+    left: 25px;
+    top: 25px;
+}
+
+.front1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 190px solid rgb(236, 228, 219);
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: 44px;
+    left: 80px;
+    z-index: 4;
+    cursor: default;
+}
+
+.front1:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 190px solid rgb(236, 228, 219);
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: -113px;
+    left: -170px;
+    cursor: default;
+}
+
+.front1:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    border-bottom: 150px solid rgb(221, 214, 206);
+    border-right: 180px solid transparent;
+    border-left: 180px solid transparent;
+    top: -36px;
+    left: -170px;
+    cursor: default;
+}
+
+.message1 {
+    position: absolute;
+    font-family: Agbalumo;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    top: 5px;
+    left: -10px;
+    transition: .5s;
+    font-size: 90px;
+    width: 200px;
+    cursor: default;
+}
+
+.h-invitation1 {
+    position: absolute;
+    top: -300px;
+    color: white;
+    font-family: Agbalumo;
+    text-align: center;
+    width: 270px;
+    font-size: 70px;
+    left: -50px;
+    cursor: default;
+}
+
+.showBtn1 {
+    
+}
+
+.infobtn1 {
+    border: none;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 70px;
+    font-family: Agbalumo;;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: 110px;
+    left: 22px;
+    transition: 500ms;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 4px;   
+    transition: 500ms;
+}
+
+.infobtn1:hover {
+    color: #ddd4bd;
+}
+
+.tet:hover .square {
+    transform: translateY(-120px) rotate(-45deg);
+}
+
+.tet:hover .message1 {
+    transform: translateY(-120px);
+}
+
+.tet:hover .infobtn1 {
+    transform: translateY(-120px);
+    z-index: 4;
+}
+
+  /*GO UP*/
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 200, 255); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 20px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 500ms;
   }
   
-  #flap:checked ~ .card-front {
-    z-index:7;
+  #myBtn:hover {
+    background-color: rgba(0, 200, 255, 0.375);/* Add a dark-grey background on hover */
   }
-  
-  #flap:checked ~ .card {
-    z-index:4;
-    transform: translateY(-60px);
-  }
-  
