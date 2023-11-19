@@ -19,83 +19,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/22a10cf444.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/micae_blue.ico">
+    <script src="https://kit.fontawesome.com/22a10cf444.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/micae_blue.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo:wght@600&family=Josefin+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo:wght@600;700&family=Josefin+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
 <!-- oncontextmenu="return false;" ondragstart="return false;" // Für nicht Bild kopieren   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 <body>
     <!-- NAVIGATION -->
 
-    <div class="navbar">
-        <div class="logo">
-            <a class="clickable-logo" href="index.html">
-                <img class="logo-img" src="img/micae_blue.png" width="65" height="65">
-                <div class="header-container">
-                    <div class="header">
+    <div class="navig">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/micae_blue.png" class="img-logo" align="left">
+                    <div class="logo-text">
                         SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="navibar">
-            <a href="thongtin.html">
-                THÔNG TIN
-            </a>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    THÁNH LỄ VÀ NGƯỜI QUÁ CỐ &nbsp; <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="lichthanhle.html">
-                        LỊCH THÁNH LỄ
-                    </a>
-                    <a href="kinh.html">
-                        KINH NGUYỆN
-                    </a>
-                    <a href="caopho.html">
-                        CÁO PHÓ
-                    </a>
-                </div>
-            </div>
-            <a href="sinhhoat.html">
-                SINH HOẠT CỘNG ĐỒNG
-            </a>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    MEDIA &nbsp; <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="hinh.html">
-                        HÌNH ẢNH
-                    </a>
-                    <a href="video.html">
-                        VIDEO
-                    </a>
-                    <a href="nhac.html">
-                        NHẠC
-                    </a>
-                </div>
-            </div>
-            <a href="congdong.html">
-                CỘNG ĐỒNG
-            </a>
-            <a href="lienhe.html">
-                LIÊN HỆ
-            </a>
-        </div>
-        <div class="left-side-drop">
-            <button class="lang-switch">
-                NGÔN NGỮ &nbsp; <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="lang-content">
-                <a href="index.html">
-                    TIẾNG VIỆT
-                </a>
-                <a href="ger-index.html">
-                    DEUTSCH
                 </a>
             </div>
-        </div>
+            <nav>
+                <ul>
+                    <li><a href="#">THÔNG TIN <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">LỊCH</a></li>
+                            <li><a href="#">THƯ GIÁO XỨ</a></li>
+                            <li><a href="#">THƯ MỜI</a></li>
+                            <li><a href="caopho.html">CÁO PHÓ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">KINH NGUYỆN</a></li>
+                    <li><a href="sinhhoat.html">SINH HOẠT</a></li>
+                    <li><a href="#">MEDIA <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+                        <ul class="submenu">
+                            <li><a href="hinh.html">HÌNH ẢNH</a></li>
+                            <li><a href="video.html">VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="congdong.html">CỘNG ĐỒNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+    
+                    <li><a href="#" class="lang">NGÔN NGỮ <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+                        <ul class="submenu">
+                            <li><a href="index.html" >TIẾNG VIỆT</a></li>
+                            <li><a href="ger-index.html">DEUTSCH</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
+    
 
     <div class="top-page">
         <div class="intro-banner">
@@ -202,7 +186,7 @@
         <img src="img/ch.jpg" class="image-abt5">
     </center>
 
-    <div class="invitation">
+    <div class="invitation" id="linkinvitation">
         <div class="advent">
             <div class="envelope">
             </div>
@@ -222,12 +206,27 @@
             <div class="front">
             </div>
             <div class="info">
-                Di chuột qua phong bì
+                Chuyển chuột qua phong bì
             </div>
+
+            <div class="stars">
+                <i class="star"></i>
+                <i class="star1"></i>
+                <i class="star2"></i>
+                <i class="star3"></i>
+                <i class="star4"></i>
+                <i class="star5"></i>
+                <i class="star6"></i>
+                <i class="star7"></i>
+                <i class="star8"></i>
+                <i class="star9"></i>
+            </div>
+            
             <div class="h-invitation">
                 Mùa Vọng
             </div>
         </div>
+       
     </div>
 
     <div class="invitation1">
@@ -249,41 +248,25 @@
             <div class="front1">
             </div>
             <div class="info">
-                Di chuột qua phong bì
+                Chuyển chuột qua phong bì
+            </div>
+            <div class="lantern">
+                <div class="de-ny"> Frohes neues Jahr! </div>
+                <div class="lantern-btm">
+                </div>
+            </div>
+            <div class="lantern1">
+                <div class="lantern-cable">
+                </div>
+                <div class="vn-ny"> Chúc mừng năm mới! </div>
+                <div class="lantern-btm1">
+                </div>
             </div>
             <div class="h-invitation1">
-                Tết
+                Mừng Hội Xuân
             </div>
         </div>
     </div>
-
-
-    <button onclick="topFunction()" id="myBtn" title="Đi Lên">
-        <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
-    </button>
-
-    <script>
-
-        let mybutton = document.getElementById("myBtn");
-
-
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
 
 </body>
 
