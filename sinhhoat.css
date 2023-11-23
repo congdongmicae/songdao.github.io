@@ -29,6 +29,7 @@ a:active {
     color: rgb(164, 27, 16);
 }
 
+
 /*NAVBAR*/
 
 * {
@@ -51,7 +52,8 @@ a {
 }
 
 body {
-    font-family: Archivo;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
     overflow-x: hidden;
 
 }
@@ -137,7 +139,8 @@ header ul .submenu li a {
     display: inline-block;
     transition: all ease 0.3s;
     font-size: 14px;
-    font-family: Be Vietnam Pro ExtraBold;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
 }
 
 .img-logo {
@@ -150,7 +153,9 @@ header ul .submenu li a {
 .head {}
 
 .sub-header {
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     font-size: 14px;
 }
 
@@ -159,9 +164,10 @@ header ul .submenu li a {
     color: rgb(164, 27, 16);
     height: 50px;
     width: 170px;
-    margin-top: 13px;
+    margin-top: 16px;
     margin-left: 10px;
-    font-family: Be Vietnam Pro ExtraBold;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
 }
 
 .logo {
@@ -205,7 +211,9 @@ header ul .submenu li a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-family: Be Vietnam Pro ExtraBold;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
     font-size: 75px;
     width: 100%;
 }
@@ -217,7 +225,9 @@ header ul .submenu li a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     font-size: 25px;
     width: 100%;
 }
@@ -257,7 +267,9 @@ header ul .submenu li a {
 }
 
 .about-text {
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     color: rgb(53, 53, 54);
     text-align: left;
@@ -265,7 +277,9 @@ header ul .submenu li a {
 }
 
 .header-abt {
-    font-family: Be Vietnam Pro ExtraBold;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
     font-size: 32px;
     color: rgb(53, 53, 54);
     margin-top: 300px;
@@ -273,7 +287,9 @@ header ul .submenu li a {
 
 .about-note {
     margin-top: 30px;
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     color: rgb(53, 53, 54);
     background-color: rgb(148, 232, 255);
@@ -346,7 +362,9 @@ header ul .submenu li a {
 }
 
 .excursion-text {
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     color: rgb(53, 53, 54);
     text-align: left;
@@ -354,8 +372,27 @@ header ul .submenu li a {
     margin-right: 30px;
 }
 
+.dhcg{
+    text-decoration: none;
+    color: rgb(111, 194, 219);
+}
+
+.dhcg:link {
+    color: rgb(111, 194, 219);
+}
+
+.dhcg:visited {
+    color: rgb(111, 194, 219);
+}
+
+.dhcg:active {
+    color: rgb(111, 194, 219);
+}
+
 .header-exc {
-    font-family: Be Vietnam Pro ExtraBold;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
     font-size: 32px;
     color: rgb(53, 53, 54);
     margin-top: 35px;
@@ -363,7 +400,9 @@ header ul .submenu li a {
 
 
 .header-age {
-    font-family: Be Vietnam Pro ExtraBold;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
     font-size: 32px;
     color: rgb(53, 53, 54);
     margin-top: 40px;
@@ -456,7 +495,7 @@ header ul .submenu li a {
 }
 
 .ornament:after {
-    left: 114px;
+    left: 114.5px;
     top: -100;
 }
 
@@ -501,7 +540,9 @@ header ul .submenu li a {
 
 .message {
     position: absolute;
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     letter-spacing: 4px;
     text-align: center;
     color: white;
@@ -647,9 +688,9 @@ header ul .submenu li a {
 
 .lantern:after {
     content: "";
-    height: 145px;
+    height: 280px;
     width: 5px;
-    top: -157px;
+    top: -292px;
     left: 95px;
     position: absolute;
     cursor: default;
@@ -680,7 +721,9 @@ header ul .submenu li a {
 
 .de-ny {
     position: absolute;
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     letter-spacing: 4px;
     text-align: center;
     color: white;
@@ -704,9 +747,9 @@ header ul .submenu li a {
 }
 
 .lantern-cable {
-    height: 249px;
+    height: 391px;
     width: 5px;
-    top: -260px;
+    top: -402px;
     left: 95px;
     position: absolute;
     cursor: default;
@@ -740,7 +783,9 @@ header ul .submenu li a {
 
 .vn-ny {
     position: absolute;
-    font-family: Be Vietnam Pro Medium;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
     letter-spacing: 4px;
     text-align: center;
     color: white;
@@ -822,7 +867,7 @@ header ul .submenu li a {
 
 .h-invitation1 {
     position: absolute;
-    top: -285px;
+    top: -300px;
     color: #bc3535;
     font-family: Agbalumo;
     text-align: center;
