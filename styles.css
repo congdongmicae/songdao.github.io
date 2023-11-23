@@ -625,7 +625,8 @@ form {
   margin-top: 20px;
   text-align: center;
   font-size: 30px;
-  font-family: Be Vietnam Pro ExtraBold;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
 }
 
 .header-form-us {
@@ -633,7 +634,8 @@ form {
   margin-top: 20px;
   text-align: center;
   font-size: 30px;
-  font-family: Be Vietnam Pro ExtraBold;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
 }
 
 .input-field {
@@ -655,31 +657,36 @@ form {
 
 #firstName {
   display: block;
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
 #lastName {
   display: block;
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
 #yourMail {
   display: block;
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
 #subject {
   display: block;
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
 #message {
   display: block;
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
@@ -698,7 +705,8 @@ form {
 }
 
 label {
-  font-family: Be Vietnam Pro Medium;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -707,7 +715,8 @@ label {
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  font-family: Be Vietnam Pro ExtraBold;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   margin-top: 10px;
   cursor: pointer;
