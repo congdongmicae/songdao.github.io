@@ -59,7 +59,12 @@ body {
 }
 
 .navig {
-    position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 header {
@@ -122,7 +127,7 @@ header ul .submenu li {
     margin: 0;
     width: 100%;
 
-   
+
 }
 
 header ul .submenu li a {
@@ -372,7 +377,7 @@ header ul .submenu li a {
     margin-right: 30px;
 }
 
-.dhcg{
+.dhcg {
     text-decoration: none;
     color: rgb(111, 194, 219);
 }
@@ -580,9 +585,7 @@ header ul .submenu li a {
     cursor: default;
 }
 
-.showBtn {
-    
-}
+.showBtn {}
 
 .infobtn {
     border: none;
@@ -600,6 +603,10 @@ header ul .submenu li a {
     cursor: pointer;
 }
 
+.infobtn:hover {
+    background-color: #9c8c5f;
+}
+
 .advent:hover .ornament {
     transform: translateY(-120px);
 }
@@ -611,8 +618,426 @@ header ul .submenu li a {
 .advent:hover .infobtn {
     transform: translateY(-120px);
     z-index: 5;
-    
+
 }
+
+/*BOWLING INVITATION*/
+
+.invitation2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /*
+    background-color: #5a375e;
+    */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(90, 55, 94, 1) 0%, rgba(115, 71, 120, 1) 52%, rgba(146, 90, 153, 1) 100%);
+    overflow: hidden;
+}
+
+.bowling {
+    position: relative;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.envelope2 {
+    position: relative;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, .3));
+    cursor: default;
+}
+
+.envelope2:before {
+    content: "";
+    position: absolute;
+    width: 254px;
+    height: 254px;
+    background-color: #db7fc7;
+    transform: rotate(-45deg);
+    border-radius: 0 15px 0 0;
+    left: -37px;
+    top: -82px;
+    cursor: default;
+}
+
+.envelope2:after {
+    content: "";
+    position: absolute;
+    background-color: #d17dbf;
+    width: 360px;
+    height: 225px;
+    left: -90px;
+    top: 45px;
+    cursor: default;
+}
+
+.ball {
+    position: absolute;
+    background-color: #E9CFE8;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    top: -30px;
+    left: -60px;
+    filter: drop-shadow(0 -10px 25px rgba(0, 0, 0, .3));
+    transition: .5s;
+    border-radius: 100000px;
+    cursor: default;
+}
+
+
+.ball:before {
+    content: "";
+    background-color: #c481ae;
+    height: 50px;
+    width: 50px;
+    border-radius: 500px;
+    position: absolute;
+    cursor: default;
+}
+
+.ball:after {
+    content: "";
+    background-color: #c481ae;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 500px;
+    cursor: default;
+}
+
+.point {
+    content: "";
+    background-color: #c481ae;
+    height: 50px;
+    width: 50px;
+    border-radius: 500px;
+    position: absolute;
+    cursor: default;
+    left: 115px;
+    top: 25px;
+    transition: .5s;
+}
+
+.ball:before {
+    top: 75px;
+    left: 100px;
+}
+
+.ball:after {
+    left: 125px;
+    top: 20px;
+}
+
+.front2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 190px solid #ffb7ef;
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: 44px;
+    left: 80px;
+    z-index: 4;
+    cursor: default;
+}
+
+.front2:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 190px solid #ffb7ef;
+    border-top: 113px solid transparent;
+    border-bottom: 113px solid transparent;
+    top: -113px;
+    left: -170px;
+    cursor: default;
+}
+
+.front2:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    border-bottom: 150px solid #ffcdf4;
+    border-right: 180px solid transparent;
+    border-left: 180px solid transparent;
+    top: -36px;
+    left: -170px;
+    cursor: default;
+}
+
+.message2 {
+    position: absolute;
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    top: 80px;
+    left: -4px;
+    transition: .5s;
+    font-size: 30px;
+    width: 200px;
+    cursor: default;
+}
+
+.info2 {
+    position: absolute;
+    top: 275px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    left: -59px;
+    cursor: default;
+}
+
+.spark {
+    top: -180px;
+    left: 170px;
+    position: absolute;
+    cursor: default;
+}
+
+.spark1 {
+    top: 150px;
+    left: 700px;
+    position: absolute;
+    cursor: default;
+}
+
+.spark2 {
+    top: 300px;
+    left: 100px;
+    position: absolute;
+    cursor: default;
+}
+
+.tri-up {
+    position: absolute;
+    left: -280px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #FFD966;
+}
+
+.tri-up::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #FFD966;
+    border-bottom: 10px solid transparent;
+}
+
+.tri-up::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #FFD966;
+    border-bottom: 10px solid transparent;
+}
+
+.tri-down {
+    position: absolute;
+    left: -280px;
+    top: 40px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #FFD966;
+}
+
+
+.tri-down::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -40px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD966;
+}
+
+.pin {}
+
+.pin-top {
+    position: absolute;
+    left: -450px;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.pin-top::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    width: 40px;
+    left: 5px;
+    top: 40px;
+}
+
+.pin-top::after {
+    content: "";
+    position: absolute;
+    border-bottom: 30px solid rgb(255, 255, 255);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 40px;
+    left: -5px;
+    top: 60px;
+}
+
+.pin-body {
+    position: absolute;
+    left: -460px;
+    top: 97px;
+    width: 70px;
+    height: 90px;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.pin-body::before {
+    content: "";
+    position: absolute;
+    left: -460px;
+    top: 97px;
+    width: 70px;
+    height: 90px;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.pin-body::after {
+    content: "";
+    position: absolute;
+    border-top: 40px solid rgb(255, 255, 255);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 44px;
+    left: 2.6px;
+    top: 69px;
+}
+
+.deco {
+    position: absolute;
+    left: -449px;
+    top: 171.5px;
+    width: 48px;
+    height: 47px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.deco::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: -87px;
+    width: 40px;
+    height: 6px;
+    background-color: rgb(255, 0, 0);
+}
+
+.deco::after{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -75px;
+    width: 42px;
+    height: 6px;
+    background-color: rgb(255, 0, 0);
+}
+
+.h-invitation2 {
+    position: absolute;
+    top: -320px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    width: 550px;
+    font-size: 70px;
+    left: -185px;
+    cursor: default;
+}
+
+.test {
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.showBtn2 {}
+
+.infobtn2 {
+    border: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    padding: 1px 1px;
+    width: 150px;
+    border-radius: 70px;
+    font-size: 25px;
+    background-color: #c4b28100;
+    color: #b176a4;
+    position: relative;
+    top: 150px;
+    left: 12px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.infobtn2:hover {
+    color: #a35893;
+}
+
+.bowling:hover .ball {
+    transform: translateY(-120px);
+}
+
+.bowling:hover .message2 {
+    transform: translateY(-120px);
+}
+
+.bowling:hover .infobtn2 {
+    transform: translateY(-120px);
+    z-index: 5;
+}
+
+.bowling:hover .point {
+    transform: translateY(-120px);
+    z-index: 5;
+}
+
+
 
 /*NEW YEAR INVITATION*/
 .invitation1 {
@@ -676,7 +1101,7 @@ header ul .submenu li a {
 }
 
 .lantern {
-    position: absolute; 
+    position: absolute;
     height: 140px;
     width: 200px;
     background-color: rgb(224, 42, 42);
@@ -736,7 +1161,7 @@ header ul .submenu li a {
 }
 
 .lantern1 {
-    position: absolute; 
+    position: absolute;
     height: 140px;
     width: 200px;
     background-color: rgb(224, 42, 42);
@@ -879,9 +1304,7 @@ header ul .submenu li a {
     -webkit-text-stroke-color: #8f2626;
 }
 
-.showBtn1 {
-    
-}
+.showBtn1 {}
 
 .infobtn1 {
     border: none;
@@ -897,7 +1320,7 @@ header ul .submenu li a {
     transition: 500ms;
     cursor: pointer;
     text-align: center;
-    letter-spacing: 4px;   
+    letter-spacing: 4px;
     transition: 500ms;
 }
 
@@ -919,7 +1342,7 @@ header ul .submenu li a {
 }
 
 
-  .star {
+.star {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -929,38 +1352,39 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
-  
+
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star1 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star1 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -970,39 +1394,40 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
 
-  
+
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star2 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star2 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1012,37 +1437,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star3 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star3 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1052,37 +1478,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star4 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star4 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1092,37 +1519,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star5 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star5 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1132,37 +1560,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star6 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star6 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1172,37 +1601,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star7 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star7 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1212,37 +1642,38 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star8 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star8 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1252,39 +1683,40 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
 
-  
+
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
-    }
-    
-    &:after {  
-      transform: rotate(35deg);
-    }
-  }
 
-  .star9 {
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
+    }
+
+    &:after {
+        transform: rotate(35deg);
+    }
+}
+
+.star9 {
     position: absolute;
     display: inline-block;
     width: 0;
@@ -1294,34 +1726,35 @@ header ul .submenu li a {
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #dcb951;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #dcb951;
+    border-left: .3em solid transparent;
     cursor: default;
 
-  
+
     /* Controlls the size of the stars. */
     font-size: 24px;
-    
-    &:before, &:after {
-      content: '';
-      
-      display: block;
-      width: 0;
-      height: 0;
-      
-      position: absolute;
-      top: .6em;
-      left: -1em;
-    
-      border-right:  1em solid transparent;
-      border-bottom: .7em  solid #dcb951;
-      border-left:   1em solid transparent;
-    
-      transform: rotate(-35deg);
+
+    &:before,
+    &:after {
+        content: '';
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: .6em;
+        left: -1em;
+
+        border-right: 1em solid transparent;
+        border-bottom: .7em solid #dcb951;
+        border-left: 1em solid transparent;
+
+        transform: rotate(-35deg);
     }
-    
-    &:after {  
-      transform: rotate(35deg);
+
+    &:after {
+        transform: rotate(35deg);
     }
-  }
+}
