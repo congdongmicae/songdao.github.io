@@ -104,6 +104,10 @@ body {
     text-align: center;
 }
 
+.lang {
+    color: rgb(93, 187, 213);
+}
+
 .topnav a:hover,
 .dropdown:hover .dropbtn {
     color: rgb(121, 199, 221);
@@ -203,7 +207,6 @@ body {
 .dropdown.language {
     float: right;
     background-color: #ffffff;
-    color: rgb(93, 187, 213);
     margin-bottom: 15px;
 }
 
@@ -321,8 +324,36 @@ body {
     opacity: 0.7;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 770px) {
     .slider {
-        height: 1000px;
+        height: 770px;
+    }
+
+    .text {
+        color: #ffffff;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        padding: 70px 12px;
+        position: absolute;
+        bottom: 90px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .sub-text {
+        color: #ffffff;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 60px 12px;
+        position: absolute;
+        bottom: 70px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .break {
+
     }
 }
