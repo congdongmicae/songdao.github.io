@@ -30,139 +30,142 @@ a:active {
 }
 
 /*NAVBAR*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
 body {
+    margin: 0;
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
-    overflow-x: hidden;
-
 }
 
-.navig {
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 9999;
     width: 100%;
-    background-color: #ffffff;
+    */
+
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 50px;
-    border-bottom: 1px solid #dbdbdb;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-
-
-header ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 26.5px;
-}
-
-header ul li:last-child {
-    margin-right: 0;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 22px 0;
-    display: inline-block;
-    transition: all ease 0.3s;
-    font-size: 14px;
-}
-
-header ul li a:hover {
-    color: rgb(93, 187, 213);
-}
-
-/* submenu style */
-header ul .submenu {
-    position: absolute;
-    width: 140px;
-    background-color: rgb(179, 235, 255);
-    box-shadow: 0 20px 45px #00000020;
-    margin-top: -50px;
-    margin-left: -30px;
-    opacity: 0;
-    z-index: -999;
-    transition: all ease 0.5s;
+.topnav a {
+    float: left;
+    display: block;
+    color: #2e2e2e;
     text-align: center;
-
-}
-
-header ul li:hover .submenu {
-    z-index: 99;
-    opacity: 0.9;
-    margin-top: 0;
-}
-
-header ul .submenu li {
-    margin: 0;
-    width: 100%;
-
-
-}
-
-header ul .submenu li a {
-    padding: 15px 20px;
-    display: inline-block;
-    width: 100%;
-}
-
-
-.lang {
+    padding: 14px 16px;
     text-decoration: none;
-    color: rgb(93, 187, 213);
-    padding: 22px 0;
-    display: inline-block;
-    transition: all ease 0.3s;
-    font-size: 14px;
-    /*FONT AND WEIGHT*/
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 700;
+    font-size: 18px;
+    /*to align dopdown with topnav*/
+    padding-top: 30px;
+  
+    transition: 500ms;
+}
 
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #2e2e2e;
+    padding: 30px 16px;
+    background-color: inherit;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    transition: 500ms;
+    padding-bottom: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(182, 226, 243, 0.829);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 16px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: rgb(121, 199, 221);
+}
+
+.dropdown-content a:hover {
+    color: rgb(88, 143, 158);
+    transition: 500ms;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .img-logo {
-    width: 65px;
-    margin-top: 5px;
-    margin-bottom: 5.5px;
-
-}
-
-.head {}
-
-.sub-header {
-    /*FONT AND WEIGHT*/
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
+    width: 45px;
+    float: left;
 }
 
 .logo-text {
@@ -170,20 +173,38 @@ header ul .submenu li a {
     color: rgb(164, 27, 16);
     height: 50px;
     width: 170px;
-    margin-top: 16px;
     margin-left: 10px;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 700;
+    text-align: left;
 }
 
-.logo {
+.logo a{
     transition: 500ms;
+    padding-top: 22px;
 }
 
 .logo:hover {
     opacity: 0.7;
 }
 
+.sub-header {
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+}
+
+.logo-text:hover {
+    opacity: 0.7;
+}
+
+.dropdown.language {
+    float: right;
+    background-color: #ffffff;
+    color: rgb(93, 187, 213);
+}
 
 
 /*SLIDER*/
@@ -196,7 +217,9 @@ header ul .submenu li a {
     position: relative;
     overflow: hidden;
     scroll-snap-type: x mandatory;
+    /*
     margin-top: 70px;
+    */
 }
 
 .list {
