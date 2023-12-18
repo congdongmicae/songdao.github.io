@@ -16,49 +16,69 @@
     <script src="https://kit.fontawesome.com/22a10cf444.js" crossorigin="anonymous"></script>
 </head>
 
-<body oncontextmenu="return false;" ondragstart="return false;">
-    <div class="navig">
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/micae_blue.png" class="img-logo" align="left">
-                    <div class="logo-text">
-                        SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
-                    </div>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">THÔNG TIN <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
-                        <ul class="submenu">
-                            <li><a href="lich.html">LỊCH</a></li>
-                            <li><a href="thugiaoxu.html">THƯ GIÁO XỨ</a></li>
-                            <li><a href="thumoi.html">THƯ MỜI</a></li>
-                            <li><a href="caopho.html">CÁO PHÓ</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">KINH NGUYỆN</a></li>
-                    <li><a href="sinhhoat.html">SINH HOẠT</a></li>
-                    <li><a href="#">MEDIA <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
-                        <ul class="submenu">
-                            <li><a href="hinh.html">HÌNH ẢNH</a></li>
-                            <li><a href="video.html">VIDEO</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="congdong.html">CỘNG ĐỒNG</a></li>
-                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="logo">
+            <a href="index.html">
+                <img class="img-logo" src="img/micae_blue.png">
+                <div class="logo-text">
+                    SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
+                </div>
+            </a>
+        </div>
 
-                    <li><a href="#" class="lang">NGÔN NGỮ <i class="fa-solid fa-chevron-down"
-                                style="color: #000000;"></i></a>
-                        <ul class="submenu">
-                            <li><a href="index.html">TIẾNG VIỆT</a></li>
-                            <li><a href="ger-index.html">DEUTSCH</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div class="dropdown">
+            <button class="dropbtn">Thông tin
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lich.html">Lịch</a>
+                <a href="thugiaoxu.html">Thư giáo xứ</a>
+                <a href="thumoi.html">Thư mời</a>
+                <a href="caopho.html">Cáo phó</a>
+            </div>
+        </div>
+
+        <a href="#kinhhoat">Kinh nguyện</a>
+
+        <a href="sinhhoat.html">Sinh hoạt</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Media
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="hinh.html">Hình ảnh</a>
+                <a href="video.html">Video</a>
+            </div>
+        </div>
+
+        <a href="congdong.html">Cộng đồng</a>
+
+        <a href="lienhe.html">Liên hệ</a>
+
+        <div class="dropdown language">
+            <button class="dropbtn"> <div class="lang">Ngôn ngữ <i class="fa-solid fa-chevron-down"></i></div> 
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html">Tiếng Việt</a>
+                <a href="ger-index.html">Deutsch</a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">MENU</a>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
     <div class="headline">
         <p class="hline"> THƯ GIÁO XỨ </p>
@@ -159,17 +179,17 @@
             <div class="thucu5">
                 <img src="thu giao xu/thang 5&6 preview.jpg">
                 <div class="h-recent">
-                    <p class="header-recent">
+                    <p class="header-old">
                         Số 6 Tháng 5 & 6 2023
                     </p>
                 </div>
 
                 <div class="btns-recent">
                     <a href="thu giao xu/Sống Đao_thang 5-6 2023.pdf" download>
-                        <button class="download-recent"> Download </button>
+                        <button class="download-old"> Download </button>
                     </a>
                     <a href="thu giao xu/Sống Đao_thang 5-6 2023.pdf" target="_blank">
-                        <button class="see-recent"> Xem Thư </button>
+                        <button class="see-old"> Xem Thư </button>
                     </a>
                 </div>
             </div>
@@ -177,17 +197,17 @@
             <div class="thucu4">
                 <img src="thu giao xu/thang 4 preview.jpg">
                 <div class="h-recent">
-                    <p class="header-recent">
+                    <p class="header-old">
                         Số 5 Tháng 4 2023
                     </p>
                 </div>
 
                 <div class="btns-recent">
                     <a href="thu giao xu/Sống Đao_thang 4 2023.pdf" download>
-                        <button class="download-recent"> Download </button>
+                        <button class="download-old"> Download </button>
                     </a>
                     <a href="thu giao xu/Sống Đao_thang 4 2023.pdf" target="_blank">
-                        <button class="see-recent"> Xem Thư </button>
+                        <button class="see-old"> Xem Thư </button>
                     </a>
                 </div>
             </div>
@@ -197,17 +217,17 @@
             <div class="thucu">
                 <img src="thu giao xu/thang 3 preview.jpg">
                 <div class="h-recent">
-                    <p class="header-recent">
+                    <p class="header-old">
                         Số 4 Tháng 3 2023
                     </p>
                 </div>
 
                 <div class="btns-recent">
                     <a href="thu giao xu/Sống Đao_thang 3 2023.pdf" download>
-                        <button class="download-recent"> Download </button>
+                        <button class="download-old"> Download </button>
                     </a>
                     <a href="thu giao xu/Sống Đao_thang 3 2023.pdf" target="_blank">
-                        <button class="see-recent"> Xem Thư </button>
+                        <button class="see-old"> Xem Thư </button>
                     </a>
                 </div>
             </div>
@@ -216,17 +236,17 @@
                 <div class="thucu">
                     <img src="thu giao xu/thang 2 preview.jpg">
                     <div class="h-recent">
-                        <p class="header-recent">
+                        <p class="header-old">
                             Số 3 Tháng 2 2023
                         </p>
                     </div>
 
                     <div class="btns-recent">
                         <a href="thu giao xu/Sống Đao_thang 2 2023.pdf" download>
-                            <button class="download-recent"> Download </button>
+                            <button class="download-old"> Download </button>
                         </a>
                         <a href="thu giao xu/Sống Đao_thang 2 2023.pdf" target="_blank">
-                            <button class="see-recent"> Xem Thư </button>
+                            <button class="see-old"> Xem Thư </button>
                         </a>
                     </div>
                 </div>
@@ -237,34 +257,34 @@
             <div class="thucu2">
                 <img src="thu giao xu/thang 1 preview.jpg">
                 <div class="h-recent">
-                    <p class="header-recent">
+                    <p class="header-old">
                         Số 2 Tháng 1 2023
                     </p>
                 </div>
 
                 <div class="btns-recent">
                     <a href="thu giao xu/Sống Đao_thang 1 2023.pdf" download>
-                        <button class="download-recent"> Download </button>
+                        <button class="download-old"> Download </button>
                     </a>
                     <a href="thu giao xu/Sống Đao_thang 1 2023.pdf" target="_blank">
-                        <button class="see-recent"> Xem Thư </button>
+                        <button class="see-old"> Xem Thư </button>
                     </a>
                 </div>
             </div>
             <div class="thucu3">
                 <img src="thu giao xu/thang 12 2022 preview.jpg">
                 <div class="h-recent">
-                    <p class="header-recent">
+                    <p class="header-old">
                         Tháng 12 2022
                     </p>
                 </div>
 
                 <div class="btns-recent">
                     <a href="thu giao xu/Sống Đao_thang 12 2022.pdf" download>
-                        <button class="download-recent"> Download </button>
+                        <button class="download-old"> Download </button>
                     </a>
                     <a href="thu giao xu/Sống Đao_thang 12 2022.pdf" target="_blank">
-                        <button class="see-recent"> Xem Thư </button>
+                        <button class="see-old"> Xem Thư </button>
                     </a>
                 </div>
             </div>
