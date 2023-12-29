@@ -38,6 +38,10 @@ body {
   margin: 0;
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
+  overflow-x: hidden;
+  /*horizontal*/
+  overflow-y: scroll;
+  /*vertikal*/
 }
 
 .topnav {
@@ -297,8 +301,6 @@ body {
   height: 136px;
   animation: fadeIn 7s;
 }
-
-
 
 
 /*CONG DONG*/
