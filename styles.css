@@ -298,13 +298,46 @@ body {
   animation: fadeIn 7s;
 }
 
-.container-header-cd {
-  margin-top: 200px;
-  display: inline-block;
-}
+
 
 
 /*CONG DONG*/
+
+.container-header-cd {
+  margin-top: 100px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1080px) {
+  .group-grf {
+    width: 250px;
+    height: 100;
+    margin-left: 70px;
+    margin-right: 80px;
+    margin-bottom: 42px;
+  }
+
+  .quote-cd {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    width: 330px;
+  }
+
+  .header-cd {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+
+}
 
 .container-cd {
   display: inline-block;
@@ -318,7 +351,7 @@ body {
 .header-cd {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 55px;
   color: rgb(53, 53, 54);
   text-align: left;
   margin-top: 0;
@@ -331,11 +364,11 @@ body {
   font-size: 23px;
   color: rgb(53, 53, 54);
   text-align: left;
-  width: 430px;
+  width: 330px;
 }
 
 .group-grf {
-  margin-left: 70px;
+  margin-left: 57px;
   margin-bottom: 42px;
 }
 
@@ -451,7 +484,7 @@ body {
 }
 
 .about-note {
-  margin-top: 170px;
+  margin-top: 80px;
   /*FONT AND WEIGHT*/
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
