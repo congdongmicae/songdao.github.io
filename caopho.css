@@ -133,44 +133,44 @@ body {
 
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
-      display: none;
+    display: none;
   }
 
   .topnav a.icon {
-      float: right;
-      display: block;
+    float: right;
+    display: block;
   }
 }
 
 @media screen and (max-width: 1080px) {
   .topnav.responsive {
-      position: relative;
+    position: relative;
   }
 
   .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
   }
 
   .topnav.responsive .dropdown {
-      float: none;
+    float: none;
   }
 
   .topnav.responsive .dropdown-content {
-      position: relative;
+    position: relative;
   }
 
   .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
+    display: block;
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -195,7 +195,7 @@ body {
   transition: 500ms;
 }
 
-.logo a{
+.logo a {
   padding-top: 22px;
 }
 
@@ -286,7 +286,6 @@ body {
   width: 72px;
   height: 136px;
   animation: fadeIn 4s;
-
 }
 
 #section2 {
@@ -419,4 +418,31 @@ body {
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .bible-verse {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    /*letter-spacing: 7px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeIn 4s;
+    margin-top: 20px;
+    height: 75px;
 
+  }
+  
+  .fade-in {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    animation: fadeIn 4s;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .intro-text {
+    margin-top: -40px;
+    height: 300px;
+  }
+}
