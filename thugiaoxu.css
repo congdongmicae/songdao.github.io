@@ -29,6 +29,11 @@ a:active {
     color: rgb(164, 27, 16);
 }
 
+html, body{
+    overflow-x: hidden;
+    /*horizontal*/
+  }
+
 /*NAVBAR*/
 body {
     margin: 0;
