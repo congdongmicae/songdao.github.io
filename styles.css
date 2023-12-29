@@ -465,16 +465,43 @@ body {
 
 /*LIEN HE*/
 
-.container-contact {}
+.container-contact {
+  height: 780px;
+}
 
 .contact-cha {
   width: 300px;
   height: 500px;
   background-color: rgb(255, 255, 255);
-  margin-top: 160px;
+  margin-top: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: inline-block;
+}
 
+@media screen and (max-width: 1080px) {
+  .contact-cha {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+
+  .contact-us {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+
+
+  .container-contact {
+    height: 780px;
+  }
+  
 }
 
 .contact-cha-img {
@@ -489,13 +516,23 @@ body {
 .contact-us {
   width: 300px;
   height: 500px;
+  margin-bottom: 50px;
+  /*
   margin-left: 100px;
+  */
   background-color: rgb(255, 255, 255);
-  margin-top: 160px;
+  margin-top: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: inline-block;
 }
 
+/*
+.space-between {
+  height: 100px;
+  width: 50px;
+  display: inline-block;
+}
+*/
 .contact-us-img {
   width: 300px;
   height: 300px;
