@@ -36,6 +36,11 @@ body {
     font-weight: 600;
 }
 
+html, body{
+    overflow-x: hidden;
+    /*horizontal*/
+  }
+
 .topnav {
     overflow: hidden;
     background-color: #ffffff;
@@ -565,3 +570,214 @@ body {
     margin-bottom: 50px;
 }
 */
+
+
+@media screen and (max-width: 1080px) {
+    .hline {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(53, 53, 54);
+        margin-top: -70px;
+    }
+
+    .thu-moi-nhat {
+        width: 300px;
+        height: 550px;
+        margin-top: 100px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.356) 84%);
+        display: inline-block;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .prev-new {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        margin-top: 0;
+    }
+
+    .see {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+    
+    .download {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        margin-top: 12px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .see-recent {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+
+    .thu {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        margin-left: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .thu1 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.438) 84%);
+        margin-left: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+    
+    .thu2 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.438) 84%);
+        margin-left: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    
+    }
+
+    .download-recent {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .header-recent {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 17px;
+        width: 300px;
+        margin-left: 50px;
+        padding-top: 20px;
+    }
+
+    .thu-cu {
+        margin-top: 50px;
+    }
+    
+    .see-old {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+
+    .download-old {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .header-old{
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 17px;
+        width: 300px;
+        margin-left: 50px;
+        padding-top: -2px;
+    }
+
+    .thucu {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .thucu1 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .thucu2 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .thucu3 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+}
