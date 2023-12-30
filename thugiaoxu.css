@@ -343,7 +343,6 @@ body {
     background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.438) 84%);
     margin-left: 30px;
     box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
-
 }
 
 .headline-old {
@@ -401,7 +400,6 @@ body {
     margin-left: 120px;
     padding-top: -5px;
 }
-
 
 .btns-recent {
     margin-top: 30px;
@@ -584,7 +582,6 @@ body {
     margin-bottom: 50px;
 }
 
-
 .thucu4 {
     width: 500px;
     height: 150px;
@@ -618,4 +615,270 @@ body {
     display: inline-block;
     margin-right: 50px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+    .hline {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        text-align: center;
+        color: rgb(53, 53, 54);
+        margin-top: -70px; 
+        margin-bottom: 0px; 
+    }
+
+    .thu-moi-nhat {
+        width: 300px;
+        height: 550px;
+        margin-top: 40px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.356) 84%);
+        display: inline-block;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .headline-latest {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        width: 300px;
+        margin-top: px;
+        margin-bottom: 0;
+    }    
+
+    .prev-new {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        margin-top: 0;
+    }
+    
+    .see {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+
+    .see-old {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+
+    .download {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .thu {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 70px;
+        margin-left: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .thu1 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        margin-left: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .thu2 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.438) 84%);
+        margin-left: 2px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    }
+
+    .header-recent {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        width: 300px;
+        margin-left: 50px;
+        padding-top: 20px;
+    }
+
+    .see-recent {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 25px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+        display: none;
+    }
+
+    .download-recent {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .headline-old {
+        width: 100%;
+        height: 50px;
+        margin-top: 140px;
+        text-align: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+        color: rgb(53, 53, 54);
+    }
+    
+    .header-old {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        width: 300px;
+        margin-left: 55px;
+        padding-top: -5px;
+    }
+
+    .thucu {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .thucu1 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .thucu2 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .thucu3 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .thucu4 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .thucu5 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .thucu6 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .download-old {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 20px;
+        margin-right: 0px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: rgb(225, 246, 255);
+        box-shadow: 0px 8px 16px 0px rgba(30, 196, 238, 0.404);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .thu-cu {
+        margin-top: 40px;
+    }
 }
