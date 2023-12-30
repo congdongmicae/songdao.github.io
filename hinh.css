@@ -231,6 +231,12 @@ body {
   background: #007bff;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    /*horizontal*/
+}
+
 body {
   align-items: center;
   justify-content: center;
@@ -418,3 +424,18 @@ body {
   display: block;
   margin-bottom: 40px;
 }
+
+
+@media screen and (max-width: 1080px) {
+  .container-header {
+    margin-top: 50px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(53, 53, 54);
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
