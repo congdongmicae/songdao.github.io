@@ -93,11 +93,3 @@ a.a-logo {
     width: 120px;
     float: right;
 }
-
-#imgd {display:block;}
-#imgp {display:none}
-
-@media screen and (max-width: 1080px) {
-    #imgd {display: none;}
-    #imgp {display: block;}
-}
