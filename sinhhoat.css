@@ -36,6 +36,7 @@ body {
 }
 
 /*NAVBAR*/
+/*NAVBAR*/
 body {
     margin: 0;
     font-family: 'Archivo', sans-serif;
@@ -169,9 +170,7 @@ body {
         width: 100%;
         text-align: left;
     }
-
 }
-
 
 .img-logo {
     width: 45px;
@@ -194,7 +193,7 @@ body {
     transition: 500ms;
 }
 
-.logo a {
+.logo a{
     padding-top: 22px;
 }
 
@@ -1350,7 +1349,7 @@ body {
     color: white;
     position: relative;
     top: 110px;
-    left: 31px;
+    left: 25px;
     transition: 500ms;
     cursor: pointer;
     text-align: center;
@@ -1644,4 +1643,106 @@ body {
 
 .notice-nav {
     color: rgb(119, 201, 231);
+}
+
+.tet-text {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(53, 53, 54);
+    margin-top: 70px;
+}
+
+.map1 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.map2 {
+    margin-bottom: 50px;
+}
+
+.tet-text1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(53, 53, 54);
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.tet-text2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(53, 53, 54);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trainstation {
+    margin-bottom: 50px;
+}
+
+.invitation-file {
+    width: 670px;
+    margin-bottom: 20px;
+}
+
+
+/*invitation page*/
+
+@media screen and (max-width: 1080px) {
+    .tet-text {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        color: #353536;
+        margin-top: 50px;
+        
+    }
+
+    .map1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 333px;
+    }
+
+    .map2 {
+        margin-bottom: 12px;
+        width: 333px;
+    }
+
+    .trainstation {
+        width: 333px;
+    }
+
+    .tet-text1 {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(53, 53, 54);
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .invitation-file {
+        width: 333px;
+        margin-bottom: 20px;
+    }
+
+    .tet-text2 {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(53, 53, 54);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
