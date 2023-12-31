@@ -370,3 +370,7 @@ body {
     display: block;
     margin-top: 50px;
 }
+
+.notice-nav {
+  color: rgb(119, 201, 231);
+}

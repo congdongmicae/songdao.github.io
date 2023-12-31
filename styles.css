@@ -33,6 +33,8 @@ a:active {
   color: rgb(164, 27, 16);
 }
 
+/*Hide horizontal scrollbar for mobile*/
+
 html, body{
   overflow-x: hidden;
   /*horizontal*/
@@ -338,8 +340,6 @@ body {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  
-
 }
 
 .container-cd {
@@ -822,4 +822,37 @@ label {
   cursor: pointer;
 }
 
-/*HINH*/
+/*CONG DONG PHONE*/
+
+@media screen and (max-width: 1080px) {
+  .group-grf {
+    width: 250px;
+    height: 100;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 42px;
+  }
+
+  .quote-cd {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    width: 330px;
+  }
+
+  .header-cd {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: rgb(53, 53, 54);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.notice-nav {
+  color: rgb(119, 201, 231);
+}

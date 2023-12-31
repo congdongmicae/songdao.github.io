@@ -781,3 +781,7 @@ html, body{
         margin-bottom: 50px;
     }
 }
+
+.notice-nav {
+    color: rgb(119, 201, 231);
+}

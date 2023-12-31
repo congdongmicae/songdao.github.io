@@ -1641,3 +1641,7 @@ body {
         cursor: default;
     }
 }
+
+.notice-nav {
+    color: rgb(119, 201, 231);
+}

@@ -373,3 +373,7 @@ body {
         justify-content: center;
     }
 }
+
+.notice-nav {
+    color: rgb(119, 201, 231);
+}

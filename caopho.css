@@ -446,3 +446,7 @@ body {
     height: 300px;
   }
 }
+
+.notice-nav {
+  color: rgb(119, 201, 231);
+}

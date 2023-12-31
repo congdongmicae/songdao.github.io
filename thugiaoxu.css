@@ -29,10 +29,11 @@ a:active {
     color: rgb(164, 27, 16);
 }
 
-html, body{
+html,
+body {
     overflow-x: hidden;
     /*horizontal*/
-  }
+}
 
 /*NAVBAR*/
 body {
@@ -191,7 +192,7 @@ body {
     transition: 500ms;
 }
 
-.logo a{
+.logo a {
     padding-top: 22px;
 }
 
@@ -267,7 +268,7 @@ body {
 }
 
 .btns {
-    
+
     margin-top: 50px;
 }
 
@@ -624,8 +625,8 @@ body {
         font-size: 45px;
         text-align: center;
         color: rgb(53, 53, 54);
-        margin-top: -70px; 
-        margin-bottom: 0px; 
+        margin-top: -70px;
+        margin-bottom: 0px;
     }
 
     .thu-moi-nhat {
@@ -645,7 +646,7 @@ body {
         width: 300px;
         margin-top: px;
         margin-bottom: 0;
-    }    
+    }
 
     .prev-new {
         width: 300px;
@@ -653,7 +654,7 @@ body {
         object-fit: cover;
         margin-top: 0;
     }
-    
+
     .see {
         border: none;
         border-radius: 200px;
@@ -773,7 +774,7 @@ body {
         text-align: center;
         color: rgb(53, 53, 54);
     }
-    
+
     .header-old {
         font-family: 'Archivo', sans-serif;
         font-weight: 800;
@@ -881,4 +882,8 @@ body {
     .thu-cu {
         margin-top: 40px;
     }
+}
+
+.notice-nav {
+    color: rgb(119, 201, 231);
 }
