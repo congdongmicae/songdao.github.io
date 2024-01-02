@@ -1692,6 +1692,11 @@ body {
     margin-bottom: 20px;
 }
 
+.parking {
+    width: 1000px;
+    margin-bottom: 100px;
+}
+
 
 /*invitation page*/
 
@@ -1745,4 +1750,10 @@ body {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    .parking {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    
 }
