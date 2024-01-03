@@ -535,6 +535,14 @@ html, body{
     float: left;
 }
 
+.thucu4 img {
+    width: 145px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 0;
+    float: left;
+}
+
 .thucu2 {
     width: 500px;
     height: 150px;
@@ -548,6 +556,17 @@ html, body{
 }
 
 .thucu3 {
+    width: 500px;
+    height: 150px;
+    background: rgb(183, 241, 255);
+    background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+    margin-top: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.thucu4 {
     width: 500px;
     height: 150px;
     background: rgb(183, 241, 255);
@@ -771,6 +790,17 @@ html, body{
     }
 
     .thucu3 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .thucu4 {
         width: 350px;
         height: 150px;
         background: rgb(183, 241, 255);
