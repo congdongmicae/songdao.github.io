@@ -33,6 +33,7 @@ html,
 body {
     overflow-x: hidden;
     /*horizontal*/
+    
 }
 
 /*NAVBAR*/
@@ -560,6 +561,14 @@ body {
     float: left;
 }
 
+.thucu7 img {
+    width: 145px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 0;
+    float: left;
+}
+
 .thucu2 {
     width: 500px;
     height: 150px;
@@ -606,7 +615,7 @@ body {
     margin-bottom: 50px;
 }
 
-.thucu6 {
+.thucu7 {
     width: 500px;
     height: 150px;
     background: rgb(183, 241, 255);
@@ -615,6 +624,17 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
     display: inline-block;
     margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.thucu6 {
+    width: 500px;
+    height: 150px;
+    background: rgb(183, 241, 255);
+    background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+    margin-top: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+    display: inline-block;
     margin-bottom: 50px;
 }
 
@@ -865,6 +885,18 @@ body {
         margin-bottom: 50px;
     }
 
+    .thucu7 {
+        width: 350px;
+        height: 150px;
+        background: rgb(183, 241, 255);
+        background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(22, 193, 235, 0.233);
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
     .download-old {
         border: none;
         border-radius: 200px;
@@ -881,9 +913,123 @@ body {
 
     .thu-cu {
         margin-top: 40px;
-    }
+    }  
 }
+
+/*Footer*/
 
 .notice-nav {
     color: rgb(119, 201, 231);
+}
+
+.beforefoot {
+    width: 100%;
+    height: 200px;
+}
+
+.foot {
+    width: 100%;
+    height: 190px;
+    background-color: rgba(80, 183, 221, 0.342);
+}
+
+.footspace {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.foot-text {
+    text-align: center;
+}
+
+.text-foot {
+    text-align: right;
+    display: inline-block;
+    width: 83%;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.text-footcd {
+    text-align: left;
+    display: inline-block;
+    margin-left: 15px;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.socialmedia {
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1407px) {
+    .text-foot {
+        text-align: right;
+        display: inline-block;
+        width: 70%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1426px) {
+    .text-foot {
+        text-align: right;
+        display: inline-block;
+        width: 70%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 826px) {
+    .text-foot {
+        text-align: right;
+        display: inline-block;
+        width: 50%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .foot {
+        width: 100%;
+        height: 290px;
+        background-color: rgba(80, 183, 221, 0.342);
+    }
+
+    .text-footcd {
+        text-align: left;
+        display: inline-block;
+        margin-left: 0px;
+        height: 50px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .text-foot {
+        text-align: left;
+        display: inline-block;
+        margin-left: 13px;
+        margin-right: 14px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        margin-bottom: 0px;
+        margin-top: 40px;
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
