@@ -916,6 +916,10 @@ body {
     }  
 }
 
+.notice-nav {
+    color: rgb(119, 201, 231);
+  }
+
 /*Footer*/
 
 .notice-nav {

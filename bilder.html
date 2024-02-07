@@ -37,44 +37,57 @@
 <!-- oncontextmenu="return false;" ondragstart="return false;" // Für nicht Bild kopieren   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 <body oncontextmenu="return false;" ondragstart="return false;">
-    <div class="navig">
-        <header>
-            <div class="logo">
-                <a href="ger-index.html">
-                    <img src="img/micae_blue.png" class="img-logo" align="left">
-                    <div class="logo-text">
-                        SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
-                    </div>
-                </a>
+    <div class="topnav" id="myTopnav">
+        <div class="logo">
+            <a href="ger-index.html">
+                <img class="img-logo" src="img/micae_blue.png">
+                <div class="logo-text">
+                    SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
+                </div>
+            </a>
+        </div>
+
+        <a href="#">Gebete<span class="notice-nav"> (bald verfügbar)</span> </a>
+
+        <a href="veranstaltungen.html">Veranstaltungen</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Media
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="bilder.html">Bilder</a>
+                <a href="#">Videos<span class="notice-nav"> (bald verfügbar)</span></a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">GEBETE</a></li>
-                    <li><a href="veranstaltungen.html">VERANSTALTUNGEN</a></li>
-                    <li><a href="#"> MEDIA <i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
-                        <ul class="submenu">
-                            <li><a href="bilder.html">BILDER</a></li>
-                            <li><a href="#">VIDEOS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="pfarrei.html">PFARREI</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
+        </div>
 
-                    <li><a href="#" class="lang">SPRACHEN<i class="fa-solid fa-chevron-down"
-                                style="color: #000000;"></i></a>
-                        <ul class="submenu">
-                            <li><a href="index.html">TIẾNG VIỆT</a></li>
-                            <li><a href="ger-index.html">DEUTSCH</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <a href="pfarrei.html"> Unsere Pfarrei<span class="notice-nav"> (bald verfügbar)</span></a>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <div class="dropdown language">
+            <button class="dropbtn">
+                <div class="lang">Sprachen<i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="dropdown-content">
+                <a href="ger-index.html">Deutsch</a>
+                <a href="index.html">Tiếng Việt</a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">MENU</a>
     </div>
 
-    <div class="container-header">
-        Bilder
-    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 
 
