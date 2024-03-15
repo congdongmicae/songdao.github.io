@@ -121,6 +121,11 @@ body {
     display: block;
 }
 
+.notice-nav {
+    color: rgb(119, 201, 231);
+}
+
+
 @media screen and (max-width: 1325px) {
 
     .topnav a:not(:first-child),
@@ -286,7 +291,6 @@ body {
 
 .dots li.active {
     width: 20px;
-
     background-color: rgb(130, 197, 222);
 }
 
@@ -605,11 +609,6 @@ body {
 
 
 /*Footer*/
-
-.notice-nav {
-    color: rgb(119, 201, 231);
-}
-
 .beforefoot {
     width: 100%;
     height: 200px;
@@ -617,111 +616,62 @@ body {
 
 .foot {
     width: 100%;
-    height: 190px;
-    background-color: rgba(80, 183, 221, 0.342);
+    height: 140px;
+    background: radial-gradient(circle, rgba(183, 241, 255, 1) 36%, rgba(173, 239, 255, 0.541) 84%);
 }
-
-.footspace {
+.contact {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    height: 100%;
+    width: 350px;
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: rgba(255, 255, 255, 0);
 }
 
-.foot-text {
-    text-align: center;
-}
-
-.text-foot {
-    text-align: right;
+.contact-h {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    padding: 10px;
     display: inline-block;
-    width: 83%;
-    margin-right: 15px;
-    margin-top: 15px;
 }
 
-.text-footcd {
-    text-align: left;
+.pf {
+    margin-top: 14px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+}
+
+.us {
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+}
+.socials {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    background-color: rgb(253, 109, 109);
+    height: 100%;
+    width: 450px;
     display: inline-block;
-    margin-left: 15px;
-    height: 50px;
-    margin-bottom: 0px;
+}
+
+.socials-h {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.social-icons {
+    margin-top: 14px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 15px;
 }
 
 .copyright {
-    margin-top: 50px;
-    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 15px;
 }
 
-.socialmedia {
-    margin-top: 12px;
-}
-
-
-
-@media screen and (max-width: 1407px) {
-    .text-foot {
-        text-align: right;
-        display: inline-block;
-        width: 70%;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-}
-
-@media screen and (max-width: 1426px) {
-    .text-foot {
-        text-align: right;
-        display: inline-block;
-        width: 70%;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-}
-
-@media screen and (max-width: 826px) {
-    .text-foot {
-        text-align: right;
-        display: inline-block;
-        width: 50%;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .foot {
-        width: 100%;
-        height: 290px;
-        background-color: rgba(80, 183, 221, 0.342);
-    }
-
-    .text-footcd {
-        text-align: left;
-        display: inline-block;
-        margin-left: 0px;
-        height: 50px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        margin-top: 25px;
-    }
-
-    .text-foot {
-        text-align: left;
-        display: inline-block;
-        margin-left: 13px;
-        margin-right: 14px;
-        margin-top: 40px;
-        font-size: 15px;
-    }
-
-    .copyright {
-        margin-bottom: 0px;
-        margin-top: 40px;
-        font-size: 11px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-   
-}

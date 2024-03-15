@@ -369,6 +369,10 @@ body {
   margin-top: 60px;
 }
 
+.container-gallery-row-three {
+  margin-top: 60px;
+}
+
 .cp-con4 {
   width: 300px;
   height: 471px;
@@ -392,6 +396,20 @@ body {
 }
 
 .cp-img5 {
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+.cp-con6 {
+  width: 300px;
+  height: 471px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.cp-img6 {
   width: 300px;
   background-color: rgb(255, 255, 255);
   display: inline-block;
