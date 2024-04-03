@@ -412,7 +412,7 @@ body {
 }
 
 .text-one {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Archivo', sans-serif;
     font-weight: 500;
     text-align: left;
@@ -482,7 +482,7 @@ body {
     }
     
     .text-one {
-        color: white;
+        color: rgb(0, 0, 0);
         font-family: 'Archivo', sans-serif;
         font-weight: 500;
         text-align: left;
