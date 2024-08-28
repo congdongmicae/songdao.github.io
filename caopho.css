@@ -293,8 +293,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.container-gallery-row-top {}
-
 .cp-con {
   width: 301px;
   height: 471px;
@@ -373,6 +371,13 @@ body {
   margin-top: 60px;
 }
 
+.container-gallery-row-top {}
+
+
+.container-gallery-next-0 {
+  margin-bottom: 60px;
+}
+
 .cp-con4 {
   width: 300px;
   height: 471px;
@@ -442,6 +447,22 @@ body {
   background-color: rgb(255, 255, 255);
   display: inline-block;
 }
+
+
+.cp-con9 {
+  width: 300px;
+  height: 471px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.cp-img9 {
+  width: 301px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
 
 
 @media screen and (max-width: 1130px) {
