@@ -464,7 +464,19 @@ body {
   display: inline-block;
 }
 
+.cp-con11 {
+  width: 300px;
+  height: 471px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
 
+.cp-img11 {
+  width: 301px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+}
 
 @media screen and (max-width: 1130px) {
   .cp-con2 {
@@ -477,6 +489,14 @@ body {
   }
 
   .cp-con9 {
+    width: 300px;
+    height: 471px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+
+  .cp-con10 {
     width: 300px;
     height: 471px;
     background-color: rgb(255, 255, 255);
